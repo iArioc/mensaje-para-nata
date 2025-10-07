@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Nata, Mi Amor ❤️</title>
+
+    <style>
+        /* ====================
+           1. ESTILOS CSS
+           ==================== */
+
+        /* Estilos Generales y Resets */
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #ffe0e6;
+            color: #333;
+            line-height: 1.6; /* Un poco más compacto para móvil */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Contenedor principal del mensaje (oculto al inicio) */
+        #message-content {
+            display: none; /* Oculto inicialmente */
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        header {
+            background-color: #ff8fa5;
+            color: white;
+            padding: 15px 0;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 1.8em; /* Más pequeño para móvil */
+            margin: 0;
+        }
+
+        .parrafo-sorpresa {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 40vh; /* Espacio para scroll y animación */
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease-in-out;
+            opacity: 0.98;
+            font-size: 1.05em;
+        }
+
+        /* --- Pantalla de Inicio (Splash Screen) --- */
+        #splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffc0cb; /* Un rosa vibrante */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            transition: opacity 0.5s ease;
+        }
+
+        #splash-screen h2 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        #enter-button {
+            padding: 15px 40px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            background-color: #e91e63; /* Rosa oscuro */
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        #enter-button:active {
+            transform: scale(0.95);
+            background-color: #d81b60;
+        }
+
+        /* --- Animación de Corazones --- */
+        .heart-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 1000;
+        }
+
+        .heart {
+            position: absolute;
+            color: red;
+            font-size: 24px;
+            transform: translateY(0);
+            opacity: 1;
+            animation: floatUp 4s ease-out forwards;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(100vh) scale(0.5);
+                opacity: 0;
+            }
+            25% {
+                opacity: 1;
+                transform: translateY(75vh) scale(1);
+            }
+            100% {
+                transform: translateY(-10vh) scale(1.5);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="splash-screen">
+        <h2>Tienes un Mensaje Secreto</h2>
+        <button id="enter-button">
+            Presiona para Entrar ❤️
+        </button>
+    </div>
+
+    <div id="message-content">
+        <header>
+            <h1>Un Mensaje Especial para Ti, Nata</h1>
+        </header>
+
+        <main id="message-container">
+            <p class="parrafo-sorpresa">Hoy te quiero decirte Nata, algo ❤️. Ya cumplimos un año 💕 y quiero decirte nuevamente, otra vez, lo importante y especial que eres para mí 🌸. Realmente eres más de lo que ya piensas que eres 🌟. Eres una chica muy buena, muy amable 🥰, y sé que hay muchas cosas que tú no sabes aún de ti, pero sinceramente yo sé que las tienes 💖.</p>
+
+            <p class="parrafo-sorpresa">Confía mi amor ❤️, en que cuando te dije que voy a estar aquí para ti, voy a estarlo 🤗. No te dejaré sola nunca 💞. Se que tienes miedo que te deje sola, pero eso no sucederá, yo estaré contigo, y nunca más te sentirás sola. Eres una persona especial para mí 💫, y ya eso debe de ser suficiente, para que te des cuenta lo increíble que eres. </p>
+
+            <p class="parrafo-sorpresa">Me encanta todo, de verdad Nata 🥰. No sabes cuánto amo lo que tengo contigo 💘. Sé que hay muchas cosas que hacer y que tenemos por hacer, pero confía ✨. Si esperamos y somos pacientes, las cosas sucederán en el mejor momento ⏳👩🏻‍❤️‍👨🏻.</p>
+
+            <p class="parrafo-sorpresa">Puedes confiar en mí ❤️. Puedes permitir que te ayude 🤲. Puedes también permitir que yo pueda ser esa persona que puedas correr a sus brazos 🫂💞. Me encantaría que sea así siempre, porque desde que te conozco, te he dicho miles de cosas que quiero cumplir, y las continuaré haciéndolas. </p>
+
+            <p class="parrafo-sorpresa">También quiero decirte algo que llevo sintiendo hace días, te he notado muy cansada por tanto trabajo, con muchas cosas encima, y quiero que sepas que estoy muy orgulloso de ti 💖. Eres fuerte, y a pesar de todo, sigues de pie. No permitas que nada ni nadie te derrumbe. Mantente firme, con la mente en alto, incluso cuando todo parece difícil🌟. Pero también, quiero decirte que lo estás haciendo muy bien, y cuando necesites que te anime, yo te animaré, cuando quieras que te apoye, yo te apoyaré, cuando quieras un abrazo, yo te abrazaré, porque yo voy a estar aquí, en todo lo que hagas. </p>
+
+            <p class="parrafo-sorpresa">Siempre vas a tener a tu fan número uno, que estará feliz y contento con cada paso que des, con cada logro, con cada pequeño detalle que hagas en tu vida 🌷. </p>
+
+            <p class="parrafo-sorpresa ultimo-parrafo">Y por último, quiero dejarte saber que ya eres y serás siempre para mí la mujer más preciosa 🌷 y la mujer que amo ❤️✨.</p>
+        </main>
+    </div>
+
+    <div class="heart-container" id="heart-container"></div>
+
+    <script>
+        /* ====================
+           2. CÓDIGO JAVASCRIPT
+           ==================== */
+
+        // Función para manejar la pantalla de inicio
+        document.getElementById('enter-button').addEventListener('click', function() {
+            const splashScreen = document.getElementById('splash-screen');
+            const messageContent = document.getElementById('message-content');
+
+            // 1. Ocultar la pantalla de inicio con transición
+            splashScreen.style.opacity = '0';
+
+            // 2. Después de la transición (0.5s), ocultarla completamente y mostrar el mensaje
+            setTimeout(() => {
+                splashScreen.style.display = 'none';
+                messageContent.style.display = 'block';
+            }, 500);
+
+            // Iniciar la observación de los párrafos una vez que el contenido es visible
+            setupIntersectionObserver();
+        });
+
+
+        // --- Lógica de la animación de Corazones (Mantenida del código anterior) ---
+
+        const parrafos = document.querySelectorAll('.parrafo-sorpresa');
+        const heartContainer = document.getElementById('heart-container');
+        const parrafosActivados = new Set();
+
+        function createHearts(count) {
+            for (let i = 0; i < count; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                heart.innerHTML = '❤️';
+
+                const left = Math.random() * 100;
+                const delay = Math.random() * 2;
+                const size = Math.random() * 1.5 + 1;
+
+                heart.style.left = `${left}vw`;
+                heart.style.animationDelay = `${delay}s`;
+                heart.style.fontSize = `${18 * size}px`; /* Ajuste de tamaño para móvil */
+
+                heartContainer.appendChild(heart);
+
+                setTimeout(() => {
+                    heart.remove();
+                }, 4000);
+            }
+        }
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        let observer;
+
+        function setupIntersectionObserver() {
+            if (observer) return; // Evitar inicializar dos veces
+
+            observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !parrafosActivados.has(entry.target)) {
+                        createHearts(20); // Un poco menos de corazones para mejor rendimiento en móvil
+                        parrafosActivados.add(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            parrafos.forEach(parrafo => {
+                observer.observe(parrafo);
+            });
+        }
+    </script>
+</body>
+</html>
